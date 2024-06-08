@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Transfer</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+   <link rel="stylesheet" href="user.css">
+   <style>
+   body{
+      
+   background-image: url("sbibground1.jpg");
+   }
+       #div23{
+           
+           position: relative;
+           width: 1200px;
+           height: 500px;
+           margin-left: 200px;
+            margin-right: 100px;
+           margin-top: 15px;
+           border-style: double;
+           /* border: 1px solid blue; */
+       }
+       input[type = text]
+       {
+           
+           
+
+           font-size: 150%;
+           text-decoration: none;
+           align-content: center;
+           transform: none;   
+       }
+       label{
+        margin-left: 3%;
+        font-family:'Times New Roman', Times, serif;
+        font-size: 150%;
+        text-align: right;
+       }
+       h1{
+        font-size: 150%;
+        text-align: center;  
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color:blue
+       }
+ .leftbox{
+    width:200px;
+    text-align: left;
+    position: fixed ;
+    margin-left: 150px;
+
+}
+.rightbox{
+ 	   width: 200px;
+  	  margin-left:250px ;
+		text-align: left;
+  	 float: right;
+  	 margin-right: 300px;
+   
+}
+
+   </style>
+</head>
+<body>
+    <header>
+        
+        <div>
+      <a href="index.html">
+    </a>
+        <nav>
+            <ul>
+                <li><a class="homeblack" href="home.html">Home</a>
+                    <li><a class="homeblack" href="NewAccount.html">NewAccount</a></li>
+                    <li><a class="homered" href="Transfer.html">Transfer</a>
+                    <li><a class="homeblack" href="Debit.html">Debit</a></li>
+                    <li><a class="homeblack" href="Credit.html">Credit</a></li>
+                    <li><a class="homeblack" href="CheckBalance.html">Check Balance</a>
+                    <li><a class="homeblack" href="TransferDetails.html">TransactionHistory</a>
+                    <li><a class="homeblack" href="ChangePassword.html">Change password</a>
+                        <li><a class ="homeblack"href="Login.html">Signout</a></li>
+                
+            </ul>
+        </nav>
+        </div>
+    </header>
+    
+    <section>
+        <!-- <img src="sbi logo.jpg"alt="java"> -->
+        
+        <div id="div23">
+            <h1>Transfer</h1>
+           <br>
+            <form action="Transfer" method="post">
+        <div class="design">
+        <div class="leftbox">
+                <Label>Sender A/C:</Label><input type="text" name="sac" required>
+                <br><br><Label>Sender Name:</Label><input type="text" name="sname"required>
+                <br><br><Label>Amount:</Label><input type="text" name="amount" required>
+            </div>
+            <div class="rightbox">
+                <Label>Reciver A/C:</Label><input type="text" name="rac" required>
+                <br><br><Label>Reciever's Name</Label><input type="text" name="rname" required>
+                <br><br><Label>Reciever's Mobile :</Label><input type="text" name="mobile" required>
+              </div>
+              </div>  
+               <br><br> <br><br> <br><br>
+               <br><br><br><br> <br><br> <br><br>
+                <input class="buton"type="submit" value="Send"><br><br><br>
+                
+            </form>
+                
+            
+	
+    
+        </div>
+       
+    </section>
+    <footer>
+    
+    </footer> 
+
+</body>
+</html>

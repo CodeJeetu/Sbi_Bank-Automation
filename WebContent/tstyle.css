@@ -1,0 +1,85 @@
+
+ .buton {
+        background-color: #4CAF50;
+        border-radius: 4px;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+       
+        margin-right: 60px;
+        margin-left: 50px;
+    }
+    .jk{
+        display:inline;
+        border: #4CAF50;
+        font-family: Lucida;
+        font-size: 20px;
+        margin-left: 10px;
+   
+      }
+      .css{
+          border-radius: 4px;
+          display: inline;
+          margin-left: 10pc;
+      }
+      
+    .buton:hover {
+    color: red;
+    background: #eff;
+    }
+    
+    form{
+        border-radius: 4px;
+        text-align: center;
+        border:10px;
+    }
+    #div1{
+    border-style: double;
+    color:blue;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+   
+    width: 650px;height: 420px;
+    text-align: left;
+    margin-left: 520px;
+    margin-right: 100px;
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    
+
+}
+#div2{
+    margin-top: 10pc;
+}
+table, th{
+    border: 2px solid black
+
+    }
+   
+    td{
+        font-size: 20px;
+        border: 1px solid ;
+        
+        padding: 4px 4px 4px 4px;
+    }
+    th{
+        font-size: 20px;
+    }
+    table{
+    	margin-left :28%;
+    	margin-top :3%;
+        width: 600px;
+        border-collapse: collapse;
+    }
+    h1{
+    margin-top :3%;
+    text-align :center;
+    }
+    
+    

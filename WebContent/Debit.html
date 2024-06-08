@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Debit Amount</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+   <link rel="stylesheet" href="user.css">
+    <style>
+    
+   
+    body{
+        background-image: url("sbibground1.jpg");
+    }
+  
+    .buton {
+        background-color: #4CAF50;
+        border-radius: 4px;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+       
+        margin-right: 60px;
+        margin-left: 50px;
+    }
+    .jk{
+        display:inline;
+        border: #4CAF50;
+        font-family: Lucida;
+        font-size: 20px;
+        margin-left: 10px;
+        
+      }
+      .css{
+          border-radius: 4px;
+          display: inline;
+          margin-left: 10pc;
+      }
+      
+    .buton:hover {
+    color: red;
+    background-color: #eff;
+    }
+    
+    form{
+        border-radius: 4px;
+        text-align: center;
+        border:10px;
+    }
+    #div1{
+    border-style: double;
+    color:blue;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+   
+    width: 550px;height: 420px;
+    text-align: left;
+    margin-left: 520px;
+    margin-right: 100px;
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    
+
+}
+#div2{
+    margin-top: 10pc;
+}
+    
+    
+    </style> 
+</head>
+<body>
+    <header>
+       <div>
+      <a href="index.html">
+    </a>
+        <nav>
+            <ul>
+                <li><a class="homeblack" href="home.html">Home</a>
+                    <li><a class="homeblack" href="NewAccount.html">NewAccount</a>
+                    <li><a class="homeblack" href="Transfer.html">Transfer</a>
+                    <li><a class="homered" href="Debit.html">Debit</a></li>
+                    <li><a class="homeblack" href="Credit.html">Credit</a></li>
+                    <li><a class="homeblack" href="CheckBalance.html">Check Balance</a>
+                    <li><a class="homeblack" href="TransferDetails.html">TransactionHistory</a>
+                    <li><a class="homeblack" href="ChangePassword.html">Change password</a>
+                        <li><a class ="homeblack"href="Login.html">Signout</a></li>
+                
+            </ul>
+        </nav>
+        </div>
+    </header>
+    
+    <section>
+        <br><br><br>
+        <!-- <img src="sbi logo.jpg"alt="java"> -->
+        <div id="div1">
+            <h1>Debit</h1>
+           <br>
+            <form action="Debit" method ="post">
+        
+                <Label>Enter Account No:</Label><br><input type="text" name="acc"class="name" required>
+                <br><br><Label>Account Holder:</Label><br><input type="text" name="name"class="pass" required>
+                
+                <br><br><Label>Amount:</Label><br><input type="text" name="amount"class="name" required>
+                <br><br>
+                <input class="buton"type="submit" value="debit">
+         
+            </form>
+                
+           
+	
+    
+        </div>
+       
+    </section>
+    <footer>
+    
+    </footer> 
+
+</body>
+</html>

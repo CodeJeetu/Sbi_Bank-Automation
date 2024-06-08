@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel=stylesheet href="user.css">
+ <link rel=stylesheet href="home.css">
+<style>
+	.select1{
+	 width : 10rem;
+	 height: 1.7rem;
+	 border :1px solid black;
+
+}
+    body{
+      
+   background-image: url("sbibground1.jpg");
+   }
+	
+</style>
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center; font-family:Garamond;">Welcome To State Bank Of India</h1>
+        <div>
+     
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Login.html">Login</a></li>
+                <li><a href="Signup.html">Signup</a></li>
+                <li><a href="Contect.html">About</a></li>
+                
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <br> <br>
+    <section>
+        <!-- <img src="sbi logo.jpg"alt="java"> -->
+        <div id="div1">
+
+            <h1 style="text-align:center; font-family:Utopia; margin-left: 20px;">Login:</h1>
+           <br>
+            <form action="Login" method ="post">
+                Type : <select name="type" class ="select1"required>
+                    
+                    <option value ="User">User</option>
+                    <option value ="Admin">Admin</option>
+                </select>
+                    <br><br><br><Label>User Name :</Label><br><input type="text" name="username" required>
+                <br><br><Label>Password :</Label><br><input type="password" name="password" required>
+                <br><br>
+                <input type="submit" value="Submit" class="buton">
+         		<br><br>
+         	<a  href ="ChangePassword.html">Forget Password </a>
+            </form>
+                
+        </div>
+       
+    </section>
+ 
+
+</body>
+</html>
