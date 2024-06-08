@@ -1,0 +1,62 @@
+CREATE TABLE Sbi_Bank;
+
+CREATE TABLE `sbi_account_dtl` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  `accountNo` varchar(100) NOT NULL,
+  `aadhar` varchar(12) DEFAULT NULL,
+  `gender` varchar(10) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `mobile` varchar(15) DEFAULT NULL,
+  `fname` varchar(255) DEFAULT NULL,
+  `atype` varchar(50) DEFAULT NULL,
+  `balance` varchar(100) DEFAULT NULL,
+  `DAte` varchar(100) DEFAULT NULL,
+  `status` varchar(50) DEFAULT NULL,
+  `lastupdate` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB ;
+
+CREATE TABLE `tdetails` (
+  `transferId` int NOT NULL AUTO_INCREMENT,
+  `Sender_Account` varchar(100) DEFAULT NULL,
+  `Sender_Name` varchar(100) DEFAULT NULL,
+  `Transferd_amount` varchar(100) DEFAULT NULL,
+  `Recev_Account` varchar(100) DEFAULT NULL,
+  `Recev_Name` varchar(100) DEFAULT NULL,
+  `Date` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`transferId`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE `ac_debit_dtl` (
+  `Debit_Id` int NOT NULL AUTO_INCREMENT,
+  `Accout_No` varchar(100) DEFAULT NULL,
+  `Name` varchar(100) DEFAULT NULL,
+  `dr_amount` varchar(100) DEFAULT NULL,
+  `Date` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`Debit_Id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE `acc_credit_dtl` (
+  `Credit_Id` int NOT NULL AUTO_INCREMENT,
+  `Accout_No` varchar(100) DEFAULT NULL,
+  `Name` varchar(100) DEFAULT NULL,
+  `cr_amount` varchar(100) DEFAULT NULL,
+  `Date` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`Credit_Id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE `employee` (
+  `username` varchar(255) NOT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `mobile` varchar(15) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`username`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+CREATE TABLE `user` (
+  `username` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  PRIMARY KEY (`username`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
